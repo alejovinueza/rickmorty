@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A23A20562BCDEA350064FC81 /* Zara_MVPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A20552BCDEA350064FC81 /* Zara_MVPApp.swift */; };
+		A23A205A2BCDEA360064FC81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A23A20592BCDEA360064FC81 /* Assets.xcassets */; };
+		A23A205E2BCDEA360064FC81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A23A205D2BCDEA360064FC81 /* Preview Assets.xcassets */; };
+		A23A206D2BCDEA9B0064FC81 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A206B2BCDEA9B0064FC81 /* Character.swift */; };
+		A23A206E2BCDEA9B0064FC81 /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A206C2BCDEA9B0064FC81 /* CharacterResponse.swift */; };
+		A23A20722BCDEAC60064FC81 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A206F2BCDEAC60064FC81 /* CharacterDetailView.swift */; };
+		A23A20732BCDEAC60064FC81 /* CharacterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A20702BCDEAC60064FC81 /* CharacterRow.swift */; };
+		A23A20742BCDEAC60064FC81 /* CharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A20712BCDEAC60064FC81 /* CharactersListView.swift */; };
+		A23A20762BCDEACE0064FC81 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A20752BCDEACE0064FC81 /* CharacterViewModel.swift */; };
+		A23A20792BCDEAD40064FC81 /* CharacterServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A20772BCDEAD40064FC81 /* CharacterServiceProtocol.swift */; };
+		A23A207A2BCDEAD40064FC81 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A20782BCDEAD40064FC81 /* NetworkManager.swift */; };
+		A23A207D2BCDEADB0064FC81 /* CharacterCachingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A207B2BCDEADB0064FC81 /* CharacterCachingProtocol.swift */; };
+		A23A207E2BCDEADB0064FC81 /* AdvancedCharacterCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A207C2BCDEADB0064FC81 /* AdvancedCharacterCache.swift */; };
+		A23A20802BCDEAE50064FC81 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A207F2BCDEAE50064FC81 /* AppError.swift */; };
+		A23A20832BCDEAED0064FC81 /* MockCharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A20812BCDEAED0064FC81 /* MockCharacterService.swift */; };
+		A23A20842BCDEAED0064FC81 /* MockCharacterCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A20822BCDEAED0064FC81 /* MockCharacterCache.swift */; };
+		A23A20932BCDEBB60064FC81 /* CharacterViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A20922BCDEBB60064FC81 /* CharacterViewModelTests.swift */; };
+		A23A20A42BCDED6A0064FC81 /* CharactersListViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A20A32BCDED6A0064FC81 /* CharactersListViewUITests.swift */; };
+		A23A20A62BCDFA630064FC81 /* CharacterDetailViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A20A52BCDFA630064FC81 /* CharacterDetailViewUITests.swift */; };
+		A2C40ED92BCE0CE80061AF4E /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C40ED82BCE0CE80061AF4E /* Styles.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A23A208D2BCDEB720064FC81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A23A204A2BCDEA350064FC81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A23A20512BCDEA350064FC81;
+			remoteInfo = "Zara MVP";
+		};
+		A23A209E2BCDED480064FC81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A23A204A2BCDEA350064FC81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A23A20512BCDEA350064FC81;
+			remoteInfo = "Zara MVP";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A23A20522BCDEA350064FC81 /* Zara MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zara MVP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23A20552BCDEA350064FC81 /* Zara_MVPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zara_MVPApp.swift; sourceTree = "<group>"; };
+		A23A20592BCDEA360064FC81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A23A205B2BCDEA360064FC81 /* Zara_MVP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zara_MVP.entitlements; sourceTree = "<group>"; };
+		A23A205D2BCDEA360064FC81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A23A206B2BCDEA9B0064FC81 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		A23A206C2BCDEA9B0064FC81 /* CharacterResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
+		A23A206F2BCDEAC60064FC81 /* CharacterDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		A23A20702BCDEAC60064FC81 /* CharacterRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterRow.swift; sourceTree = "<group>"; };
+		A23A20712BCDEAC60064FC81 /* CharactersListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersListView.swift; sourceTree = "<group>"; };
+		A23A20752BCDEACE0064FC81 /* CharacterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		A23A20772BCDEAD40064FC81 /* CharacterServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterServiceProtocol.swift; sourceTree = "<group>"; };
+		A23A20782BCDEAD40064FC81 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A23A207B2BCDEADB0064FC81 /* CharacterCachingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCachingProtocol.swift; sourceTree = "<group>"; };
+		A23A207C2BCDEADB0064FC81 /* AdvancedCharacterCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedCharacterCache.swift; sourceTree = "<group>"; };
+		A23A207F2BCDEAE50064FC81 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		A23A20812BCDEAED0064FC81 /* MockCharacterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCharacterService.swift; sourceTree = "<group>"; };
+		A23A20822BCDEAED0064FC81 /* MockCharacterCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCharacterCache.swift; sourceTree = "<group>"; };
+		A23A20892BCDEB720064FC81 /* Zara MVP Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zara MVP Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23A20922BCDEBB60064FC81 /* CharacterViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModelTests.swift; sourceTree = "<group>"; };
+		A23A20982BCDED480064FC81 /* Zara MVP UI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zara MVP UI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23A20A32BCDED6A0064FC81 /* CharactersListViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewUITests.swift; sourceTree = "<group>"; };
+		A23A20A52BCDFA630064FC81 /* CharacterDetailViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewUITests.swift; sourceTree = "<group>"; };
+		A2C40ED82BCE0CE80061AF4E /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A23A204F2BCDEA350064FC81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23A20862BCDEB720064FC81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23A20952BCDED480064FC81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A23A20492BCDEA350064FC81 = {
+			isa = PBXGroup;
+			children = (
+				A23A20542BCDEA350064FC81 /* Zara MVP */,
+				A23A208A2BCDEB720064FC81 /* Zara MVP Tests */,
+				A23A20992BCDED480064FC81 /* Zara MVP UI Tests */,
+				A23A20532BCDEA350064FC81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A23A20532BCDEA350064FC81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A23A20522BCDEA350064FC81 /* Zara MVP.app */,
+				A23A20892BCDEB720064FC81 /* Zara MVP Tests.xctest */,
+				A23A20982BCDED480064FC81 /* Zara MVP UI Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A23A20542BCDEA350064FC81 /* Zara MVP */ = {
+			isa = PBXGroup;
+			children = (
+				A23A206A2BCDEA840064FC81 /* Models */,
+				A23A20692BCDEA7D0064FC81 /* Views */,
+				A23A20682BCDEA760064FC81 /* ViewModels */,
+				A23A20672BCDEA6E0064FC81 /* Networking */,
+				A23A20662BCDEA690064FC81 /* Caching */,
+				A23A20652BCDEA630064FC81 /* Errors */,
+				A2C40ED72BCE0CCE0061AF4E /* Styles */,
+				A23A20642BCDEA5C0064FC81 /* Mocks */,
+				A23A20552BCDEA350064FC81 /* Zara_MVPApp.swift */,
+				A23A20592BCDEA360064FC81 /* Assets.xcassets */,
+				A23A205B2BCDEA360064FC81 /* Zara_MVP.entitlements */,
+				A23A205C2BCDEA360064FC81 /* Preview Content */,
+			);
+			path = "Zara MVP";
+			sourceTree = "<group>";
+		};
+		A23A205C2BCDEA360064FC81 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A23A205D2BCDEA360064FC81 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A23A20642BCDEA5C0064FC81 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A23A20822BCDEAED0064FC81 /* MockCharacterCache.swift */,
+				A23A20812BCDEAED0064FC81 /* MockCharacterService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A23A20652BCDEA630064FC81 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				A23A207F2BCDEAE50064FC81 /* AppError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		A23A20662BCDEA690064FC81 /* Caching */ = {
+			isa = PBXGroup;
+			children = (
+				A23A207C2BCDEADB0064FC81 /* AdvancedCharacterCache.swift */,
+				A23A207B2BCDEADB0064FC81 /* CharacterCachingProtocol.swift */,
+			);
+			path = Caching;
+			sourceTree = "<group>";
+		};
+		A23A20672BCDEA6E0064FC81 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A23A20772BCDEAD40064FC81 /* CharacterServiceProtocol.swift */,
+				A23A20782BCDEAD40064FC81 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A23A20682BCDEA760064FC81 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A23A20752BCDEACE0064FC81 /* CharacterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A23A20692BCDEA7D0064FC81 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A23A206F2BCDEAC60064FC81 /* CharacterDetailView.swift */,
+				A23A20702BCDEAC60064FC81 /* CharacterRow.swift */,
+				A23A20712BCDEAC60064FC81 /* CharactersListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A23A206A2BCDEA840064FC81 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A23A206B2BCDEA9B0064FC81 /* Character.swift */,
+				A23A206C2BCDEA9B0064FC81 /* CharacterResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A23A208A2BCDEB720064FC81 /* Zara MVP Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A23A20922BCDEBB60064FC81 /* CharacterViewModelTests.swift */,
+			);
+			path = "Zara MVP Tests";
+			sourceTree = "<group>";
+		};
+		A23A20992BCDED480064FC81 /* Zara MVP UI Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A23A20A32BCDED6A0064FC81 /* CharactersListViewUITests.swift */,
+				A23A20A52BCDFA630064FC81 /* CharacterDetailViewUITests.swift */,
+			);
+			path = "Zara MVP UI Tests";
+			sourceTree = "<group>";
+		};
+		A2C40ED72BCE0CCE0061AF4E /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				A2C40ED82BCE0CE80061AF4E /* Styles.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A23A20512BCDEA350064FC81 /* Zara MVP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A23A20612BCDEA360064FC81 /* Build configuration list for PBXNativeTarget "Zara MVP" */;
+			buildPhases = (
+				A23A204E2BCDEA350064FC81 /* Sources */,
+				A23A204F2BCDEA350064FC81 /* Frameworks */,
+				A23A20502BCDEA350064FC81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zara MVP";
+			productName = "Zara MVP";
+			productReference = A23A20522BCDEA350064FC81 /* Zara MVP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A23A20882BCDEB720064FC81 /* Zara MVP Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A23A208F2BCDEB720064FC81 /* Build configuration list for PBXNativeTarget "Zara MVP Tests" */;
+			buildPhases = (
+				A23A20852BCDEB720064FC81 /* Sources */,
+				A23A20862BCDEB720064FC81 /* Frameworks */,
+				A23A20872BCDEB720064FC81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A23A208E2BCDEB720064FC81 /* PBXTargetDependency */,
+			);
+			name = "Zara MVP Tests";
+			productName = "Zara MVP Tests";
+			productReference = A23A20892BCDEB720064FC81 /* Zara MVP Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A23A20972BCDED480064FC81 /* Zara MVP UI Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A23A20A02BCDED480064FC81 /* Build configuration list for PBXNativeTarget "Zara MVP UI Tests" */;
+			buildPhases = (
+				A23A20942BCDED480064FC81 /* Sources */,
+				A23A20952BCDED480064FC81 /* Frameworks */,
+				A23A20962BCDED480064FC81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A23A209F2BCDED480064FC81 /* PBXTargetDependency */,
+			);
+			name = "Zara MVP UI Tests";
+			productName = "Zara MVP UI Tests";
+			productReference = A23A20982BCDED480064FC81 /* Zara MVP UI Tests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A23A204A2BCDEA350064FC81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					A23A20512BCDEA350064FC81 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					A23A20882BCDEB720064FC81 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = A23A20512BCDEA350064FC81;
+					};
+					A23A20972BCDED480064FC81 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = A23A20512BCDEA350064FC81;
+					};
+				};
+			};
+			buildConfigurationList = A23A204D2BCDEA350064FC81 /* Build configuration list for PBXProject "Zara MVP" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A23A20492BCDEA350064FC81;
+			productRefGroup = A23A20532BCDEA350064FC81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A23A20512BCDEA350064FC81 /* Zara MVP */,
+				A23A20882BCDEB720064FC81 /* Zara MVP Tests */,
+				A23A20972BCDED480064FC81 /* Zara MVP UI Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A23A20502BCDEA350064FC81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23A205E2BCDEA360064FC81 /* Preview Assets.xcassets in Resources */,
+				A23A205A2BCDEA360064FC81 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23A20872BCDEB720064FC81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23A20962BCDED480064FC81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A23A204E2BCDEA350064FC81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23A207D2BCDEADB0064FC81 /* CharacterCachingProtocol.swift in Sources */,
+				A23A20722BCDEAC60064FC81 /* CharacterDetailView.swift in Sources */,
+				A23A206D2BCDEA9B0064FC81 /* Character.swift in Sources */,
+				A23A20842BCDEAED0064FC81 /* MockCharacterCache.swift in Sources */,
+				A23A207A2BCDEAD40064FC81 /* NetworkManager.swift in Sources */,
+				A23A20802BCDEAE50064FC81 /* AppError.swift in Sources */,
+				A2C40ED92BCE0CE80061AF4E /* Styles.swift in Sources */,
+				A23A20792BCDEAD40064FC81 /* CharacterServiceProtocol.swift in Sources */,
+				A23A206E2BCDEA9B0064FC81 /* CharacterResponse.swift in Sources */,
+				A23A20762BCDEACE0064FC81 /* CharacterViewModel.swift in Sources */,
+				A23A20832BCDEAED0064FC81 /* MockCharacterService.swift in Sources */,
+				A23A20742BCDEAC60064FC81 /* CharactersListView.swift in Sources */,
+				A23A20732BCDEAC60064FC81 /* CharacterRow.swift in Sources */,
+				A23A207E2BCDEADB0064FC81 /* AdvancedCharacterCache.swift in Sources */,
+				A23A20562BCDEA350064FC81 /* Zara_MVPApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23A20852BCDEB720064FC81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23A20932BCDEBB60064FC81 /* CharacterViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23A20942BCDED480064FC81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23A20A62BCDFA630064FC81 /* CharacterDetailViewUITests.swift in Sources */,
+				A23A20A42BCDED6A0064FC81 /* CharactersListViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A23A208E2BCDEB720064FC81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A23A20512BCDEA350064FC81 /* Zara MVP */;
+			targetProxy = A23A208D2BCDEB720064FC81 /* PBXContainerItemProxy */;
+		};
+		A23A209F2BCDED480064FC81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A23A20512BCDEA350064FC81 /* Zara MVP */;
+			targetProxy = A23A209E2BCDED480064FC81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A23A205F2BCDEA360064FC81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A23A20602BCDEA360064FC81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A23A20622BCDEA360064FC81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Zara MVP/Zara_MVP.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Zara MVP/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alejandrovinueza.Zara-MVP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A23A20632BCDEA360064FC81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Zara MVP/Zara_MVP.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Zara MVP/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alejandrovinueza.Zara-MVP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A23A20902BCDEB720064FC81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alejandrovinueza.Zara-MVP-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zara MVP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Zara MVP";
+			};
+			name = Debug;
+		};
+		A23A20912BCDEB720064FC81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alejandrovinueza.Zara-MVP-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zara MVP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Zara MVP";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A23A20A12BCDED480064FC81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alejandrovinueza.Zara-MVP-UI-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Zara MVP";
+			};
+			name = Debug;
+		};
+		A23A20A22BCDED480064FC81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alejandrovinueza.Zara-MVP-UI-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Zara MVP";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A23A204D2BCDEA350064FC81 /* Build configuration list for PBXProject "Zara MVP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23A205F2BCDEA360064FC81 /* Debug */,
+				A23A20602BCDEA360064FC81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A23A20612BCDEA360064FC81 /* Build configuration list for PBXNativeTarget "Zara MVP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23A20622BCDEA360064FC81 /* Debug */,
+				A23A20632BCDEA360064FC81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A23A208F2BCDEB720064FC81 /* Build configuration list for PBXNativeTarget "Zara MVP Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23A20902BCDEB720064FC81 /* Debug */,
+				A23A20912BCDEB720064FC81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A23A20A02BCDED480064FC81 /* Build configuration list for PBXNativeTarget "Zara MVP UI Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23A20A12BCDED480064FC81 /* Debug */,
+				A23A20A22BCDED480064FC81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A23A204A2BCDEA350064FC81 /* Project object */;
+}
